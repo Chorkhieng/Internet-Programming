@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title Contact Form
+        include css_link
+        script(src="/js/main.js")
+        script(src="/js/contact.js")
+    body
+        include nav_bar
+        h1 Schedule an Appointment
+        div(class="appointment-section")
+            form(action="/contact" method="POST")
+                p
+                    label(for="first") First Name:
+                    input(type="text" name="first" id="first" required)
+                p
+                    label(for="last") Last Name:
+                    input(type="text" name="last" id="last" required)
+                p
+                    label(for="email") Email:
+                    input(type="email" name="email" id="email" placeholder="example@mail.com" required)
+                p(class="options") Select one:
+                    select(name="choice" id="choice" required)
+                        option(value="") Select
+                        option(value="personal") Personal Travel
+                        option(value="family") Family Travel
+                        option(value="business") Business Travel
+                        option(value="VIP package") VIP Package
+                        option(value="other") Other
+                p(class="appointment-date") Select date: 
+                    input(type="date" name="bookDate" required)
+                    br
+                    label(for="translator") Check if you need translator:
+                    input(type="checkbox" name="translator" id="translator")
+                br
+                p(id="price-estimate")
+                button(type="submit") submit

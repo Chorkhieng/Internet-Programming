@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="/css">
+    </head>
+    <body>
+        <div class="topNav">
+            <div>
+                <a href="/main">Home</a>
+            </div>
+            <div>
+                <a href="/testimonies">Testimonials</a>
+            </div>
+            <div>
+                <a href="/contact">Contact Us</a>
+            </div>
+            <div>
+                <a href="/admin/contactlog">Contacts</a>
+            </div>
+        </div>
+        <h1>Schedule an Appointment</h1>
+        <div class="appointment-section">
+            <form action="/contact" method="get">
+                <p>
+                    <label for="first">First Name:</label>
+                    <input type="text" name="first" id="first" required>
+                </p>
+                <p>
+                    <label for="last">Last Name:</label>
+                    <input type="text" name="last" id="last" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                </p>
+                <p class="options">Select one:
+                    <select name="choice" required>
+                        <option value="">Select</option>
+                        <option value="personal">Personal Travel</option>
+                        <option value="family">Family Travel</option>
+                        <option value="business">Business Travel</option>
+                        <option value="VIP package">VIP Package</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+                <p class="appointment-date">Select date: <input type="date" name="bookDate" required></p>
+                <p>
+                    <label for="translator">Check if you need translator:</label>
+                    <input type="checkbox" name="translator" id="translator">
+                 </p>
+                <br>
+                <button type="submit">submit</button>
+            </form>
+        </div>
+    </body>
+ 
+</html>

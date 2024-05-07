@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title Contact Log
+        include css_link
+        script(src="/js/main.js")
+        script(src="/js/table.js")
+    body
+        include nav_bar
+        div(class="sale-section")
+            label(for="input-sale") Set sale text
+            input(type="text" name="input-sale" id="input-sale")
+            br
+            button(id="set-sale") Set sale
+            button(id="end-sale") End sale
+        h1 My Contact List
+        h2(id="sale-change")
+        table(id="contact-table")
+            tr
+                th Name
+                th Email  
+                th Scheduled Date
+                th Translator
+                th Option
+                th Remove Contact
+            //- style from lectrue
+            each contact of contacts
+                tr(id=`${contact.id}`)
+                    td= contact.first
+                    td
+                        a(href=`mailto:${contact.email}`)= contact.email 
+                    td(class="appointment-date")= contact.bookDate 
+                    td= contact.translator 
+                    td= contact.choice
+                    td 
+                        button Remove

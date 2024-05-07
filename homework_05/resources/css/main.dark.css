@@ -1,0 +1,235 @@
+/* Cascade Styles Sheet*/
+/* import google font style */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
+
+body {
+    background-color: rgb(22, 20, 9);
+    text-decoration: solid;
+    text-align: center;
+    margin: 0;
+}
+
+.topNav {
+    background-color: rgb(59, 12, 100);
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+div a {
+    background-color: rgb(165, 156, 31);
+    color: black;
+    font-weight: 300;
+    border-radius: 1em;
+    box-shadow: 0 0 0.5em;
+    text-align: center;
+    display: flex;
+    width: fit-content;
+    margin-left: 0;
+    border: 1em;
+    padding: 0.5em;
+    border-color: black;
+}
+div a:hover {
+    background-color: rgb(91, 12, 91);
+    color: rgb(177, 177, 196);
+    font-size: larger;
+}
+p {
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#price-estimate {
+    color: blue;
+}
+
+img {
+    border: 1em;
+    border-radius: 2em;
+    border-color: blueviolet;
+    width: calc(75% - 1em);
+    border-style: double;
+}
+
+iframe {
+    border: 1em;
+    margin: 3em;
+    border-style: solid;
+    border-color: rgb(23, 23, 98);
+    border-radius: 1em;
+    width: calc(50% - 1em);
+    height: 300px;
+}
+
+iframe:hover {
+    border: 1em;
+    margin: 3em;
+    border-style: solid;
+    border-color: rgb(17, 52, 58);
+    border-radius: 1em;
+    width: calc(50% - 1em);
+    height: 300px;
+}
+
+h1 {
+    color: rgb(184, 217, 212);
+    text-align: center;
+    font-family: 'Bungee Inline', sans-serif;
+    font-size: xx-large;
+}
+h2 {
+    color: rgb(176, 160, 160);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3 {
+    color: rgb(27, 178, 155);
+    text-align: center;
+    font-family: 'Joti One', serif;
+    font-size: x-large;
+}
+
+.review-section {
+    background-color: rgb(130, 130, 191);
+    border: 3px;
+    border-radius: 2em;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 4em;
+    justify-content: space-around;
+    padding: 1em;
+    column-count: 2;
+}
+
+.review-section > div {
+    background-color: rgb(121, 121, 149);
+    border: 4px;
+    border-radius: 1em;
+    border-style: solid;
+    margin: 5px;
+    padding: 10px;
+}
+
+.reviewer-name {
+    color: rgb(40, 34, 45);
+    text-align: right;
+    font-size: large;
+    margin-left: 5px;
+}
+
+.review-body {
+    color: rgb(47, 34, 55);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: left;
+    margin-left: 5px;
+}
+
+
+section.links {
+    background-color: rgb(60, 23, 146);
+    border: 1em;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 1em;
+    display: none;
+    gap: 100px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+ol {
+    list-style: none;
+    color: aquamarine;
+    font-size: large;
+    font-style: oblique;
+    background-color: rgb(67, 90, 164);
+    color: black;
+    border-radius: 1em;
+    box-shadow: 0 0 0.5em;
+    text-align: justify;
+    align-items: center;
+    margin-top: 10px;
+    padding: 2em;
+    margin-left: calc(25% - 1em);
+    margin-right: calc(25% - 1em);
+}
+
+
+div.appointment-section, div.sale-section {
+    background-color: rgb(149, 143, 155);
+    border-radius: 10px;
+    border-style: groove;
+    border-color: aquamarine;
+    margin-left: calc(30% - 2em);
+    margin-right: calc(30% - 2em);
+    padding: 20px;
+}
+
+label, .options, .appointment-date {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(14, 17, 20);
+    padding: 1px;
+}
+
+button {
+    border: 2px;
+    border-radius: 4px;
+    font-size: medium;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: rgb(69, 69, 172);
+    border: 2px;
+    border-radius: 4px;
+    font-size: large;
+    padding: 5px;
+}
+
+th {
+    background-color: rgb(237, 233, 232);
+    color: rgb(14, 15, 15);
+    border: 1px;
+    border-color: rgb(128, 113, 113);
+    border-style: solid;
+    padding: 10px;
+}
+
+td {
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+}
+
+tr:nth-child(odd) {
+    border: 1px;
+    background-color: aqua;
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    border: 1px;
+    background-color: rgb(109, 98, 119);
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+}
+
+table {
+    background-color: rgb(98, 105, 111);
+    border-color: rgb(20, 18, 18);
+    border-radius: 1em;
+    margin: 2em;
+    padding: 12px;
+    width: calc(95% - 1em);
+}

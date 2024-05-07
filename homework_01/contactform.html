@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Form</title>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li><a href="/main">Home</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/testimonies">Testimonies</a></li>
+            </ul>
+        </div>
+        <h1>Schedule an Appointment</h1>
+        <form action="/contact" method="get">
+            <p>
+                <label for="first">First Name:</label>
+                <input type="text" name="first" id="first" required>
+            </p>
+            <p>
+                <label for="last">Last Name:</label>
+                <input type="text" name="last" id="last" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+            </p>
+            <p>Select one:
+                <select name="choice" required>
+                    <option value="">Select</option>
+                    <option value="personal">Personal Travel</option>
+                    <option value="family">Family Travel</option>
+                    <option value="business">Business Travel</option>
+                    <option value="vipPackage">VIP Package</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+            <p>Select date: <input type="date" name="bookDate" required></p>
+            <p>
+                <label for="translator">Check if you need translator:</label>
+                <input type="checkbox" name="translator" id="translator">
+             </p>
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+ 
+</html>
