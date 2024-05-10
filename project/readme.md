@@ -15,44 +15,7 @@ Users can post and edit, comment on post(s), and like posted content(s). However
 
 ### Back-end 
 This site uses `mysql` for managing database and back-end of the server.
-### Current Users in Database
-You can use any `username` and `password` below to login.
-- account_name: `adminUser`
-    ```
-    username: admin
-    password: password
-    ```
-- account_name: `chorky`
-    ```
-    username: chorky
-    password: chorky@umn
-    ```
-- account_name: `Sophal Sok`
-    ```
-    username: SophalPhat
-    password: SophalSok@168
-    ```
-- account_name: `Jing Lee`
-    ```
-    username: JingLee
-    password: JingLee@999
-    ```
-- account_name: `Savung Neang`
-    ```
-    username: Savung555
-    password: Savung@555
-    ```
-- account_name: `Hai`
-    ```
-    username: HaiHai
-    password: Hai@1997
-    ```
-- account_name: `Rithy Suy`
-    ```
-    username: RithySuy
-    password: RithySuy@1995
-    ```
-In the `login` page, you can also choose `create` option to create a new account. After a new account is created successfully, you can return `login` page and log in through your new `username` and `password`.
+
 #### Data Storage
 - Users Information: For this project users' data contains `user id`, `username`, and `password`.
 - Posts: Each post has `post date-time`, `post content`, `post id`, `author's id`, and `like count` associated with it.
